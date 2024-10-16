@@ -1,3 +1,5 @@
+**Process 1 - Using DP O(n^2)**
+   
    **Longest Increasing Subsequence**
 
 To illustrate how the Longest Increasing Subsequence (LIS) is computed with a tree structure, we can visualize the relationships between the elements of the array and the decisions made at each step.
@@ -52,3 +54,23 @@ dp[] = {1, 2, 1, 1, 3}
 
 Maximum LIS Length:
 The maximum value in dp[] is 3, which represents the length of the Longest Increasing Subsequence.
+
+**Process 2 - Using DP + Binary Search O(nlog(n))**
+
+I can reduce the time complexity of the Longest Increasing Subsequence (LIS) problem using a combination of dynamic programming and binary search. The optimized approach achieves a time complexity of 
+𝑂(𝑛log𝑛)
+O(nlogn) by maintaining a separate array that keeps track of the smallest tail of all increasing subsequences found so far.
+
+Optimized Approach Using Binary Search
+Here’s how the optimized approach works:
+
+Use a Tail Array:
+
+Maintain an array (tails) where tails[i] will hold the minimum possible tail value for all increasing subsequences of length 𝑖+1
+Binary Search:
+
+For each element in the input array, use binary search to find its position in the tails array. If the element is larger than all elements in tails, it extends the largest increasing subsequence.
+If it can replace an existing value in tails, it will do so to maintain the smallest possible tail values.
+Final Length:
+
+The length of the tails array at the end will represent the length of the longest increasing subsequence.
