@@ -1,5 +1,8 @@
 import java.util.Arrays;
 
+//Time Complexity O(n^2) 
+//using DP
+
 class LIS {
     static int calculateLIS(int[] arr) {
         int n = arr.length;
@@ -36,5 +39,46 @@ class LIS {
         int[] arr = {3, 10, 2, 1, 20};
         int lengthOfLIS = calculateLIS(arr);
         printLISLength(lengthOfLIS);
+    }
+}
+
+
+//Time Complexity O(nlog(n))
+//using DP + Binary Search
+
+class Solution {
+    public int lengthOfLIS(int[] arr) {
+        int n = arr.length;
+
+        // Handle empty array case
+        if (n == 0) return 0;
+
+        // This array will store the smallest tail for all increasing subsequences
+        int[] tails = new int[n];
+        int length = 0; // Length of the longest increasing subsequence
+
+        for (int num : arr) {
+            // Binary search for the insertion point
+            int left = 0, right = length;
+
+            while (left < right) {
+                int mid = (left + right) / 2;
+                if (tails[mid] < num) {
+                    left = mid + 1; // Move to the right half
+                } else {
+                    right = mid; // Move to the left half
+                }
+            }
+
+            // Update the tails array
+            tails[left] = num;
+
+            // If we have a new largest subsequence, increase the length
+            if (left == length) {
+                length++;
+            }
+        }
+
+        return length;
     }
 }
