@@ -1,3 +1,9 @@
+# Leetcode Problems
+
+**Binary Search**<br/>
+
+1.Sqrt(x) : [Sqrt(x).pdf](https://github.com/user-attachments/files/17672316/Sqrt.x.pdf)
+
 **Process 1 - Using DP O(n^2)**
    
    **Longest Increasing Subsequence**
