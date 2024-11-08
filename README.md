@@ -2,7 +2,9 @@
 
 **Binary Search**<br/>
 
-1.Sqrt(x) : [Sqrt(x).pdf](https://github.com/user-attachments/files/17672316/Sqrt.x.pdf)
+1. Sqrt(x) :     [Sqrt(x).pdf](https://github.com/user-attachments/files/17672316/Sqrt.x.pdf)
+2. FindFirstandLastPositionofElementinSortedArray :  [_Find First and Last Position of Element in Sorted Array.pdf](https://github.com/user-attachments/files/17673400/_Find.First.and.Last.Position.of.Element.in.Sorted.Array.pdf)
+
 
 **Process 1 - Using DP O(n^2)**
    
