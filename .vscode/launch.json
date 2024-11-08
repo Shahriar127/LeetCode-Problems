@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "LongestPalindromicSubstring",
+      "request": "launch",
+      "mainClass": "LongestPalindromicSubstring",
+      "projectName": "LeetCode Problems_dcb0af22"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
