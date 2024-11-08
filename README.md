@@ -1,4 +1,4 @@
-#Leetcode Problems
+# Leetcode Problems
 
 **Binary Search
 1.Sqrt(x) : [Sqrt(x).pdf](https://github.com/user-attachments/files/17672316/Sqrt.x.pdf)
